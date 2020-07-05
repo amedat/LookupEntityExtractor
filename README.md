@@ -1,7 +1,6 @@
 # Lookup Entity Extractor
 
-Lookup Entity Extractor built for Rasa for extracting known entities from a list of examples without need of training on every set of examples. 
-The extractor is not machine learnt but uses text matching logic for entity prediction. It doesn't discovers any additional values other than provided list of examples.
+Lookup Entity Extractor built for Rasa for extracting known entities from a list of examples without the need for training on every set of examples. The extractor is not machine-learned but uses text-matching logic for entity prediction. It doesn't discover any additional values other than the provided list of examples.
 
 Lookup Entity Extractor is a good fit when you have list of exampless that are known and can be expanded as required.
 
@@ -37,7 +36,11 @@ The list examples required for the extractor is same as [Lookup Tables](https://
 
 - **Step 3**: Now you can train the model and test the `Lookup Entity Extractor`
 
+### Sample Bot
+
+https://github.com/JiteshGaikwad/pokedex-demo
+
 ### Demo
 
-
+https://youtu.be/S9_Y08DxkCo
 
