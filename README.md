@@ -10,7 +10,7 @@ The list examples required for the extractor is same as [Lookup Tables](https://
 ### How to setup?
 
 - **Step 1**: copy the `CustomEntityExtractor.py` in your project directory
-- **Step 2**: configure the `Lookup Entity Extractor` in the `config.yml` along with the required parameters:
+- **Step 2**: configure the `Lookup Entity Extractor` in the `config.yml` along with the required parameters i.e `entities`(list of entity names) & `files_path`:(path for the data files)
 ```
   # https://rasa.com/docs/rasa/nlu/components/
   language: en
@@ -34,3 +34,10 @@ The list examples required for the extractor is same as [Lookup Tables](https://
       files_path: ["data/pokenames.txt"]
 
 ```
+
+- **Step 3**: Now you can train the model and test the `Lookup Entity Extractor`
+
+### Demo
+
+
+
