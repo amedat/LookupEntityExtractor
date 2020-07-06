@@ -12,10 +12,10 @@ from rasa.nlu.extractors.extractor import EntityExtractor
 from rasa.nlu.model import Metadata
 from rasa.nlu.training_data import Message
 
-logger = logging.getLogger(_name_)
+logger = logging.getLogger(__name__)
 
 
-class LookupExtractor(EntityExtractor):
+class LookupEntityExtractor(EntityExtractor):
     """
     Searches for entities in the user's message from a list of examples.\n
     Required Parameters: \n
@@ -28,8 +28,8 @@ class LookupExtractor(EntityExtractor):
         "files_path": None
     }
 
-    def _init_(self, component_config: Optional[Dict[Text, Any]] = None):
-        super(LookupExtractor, self)._init_(component_config)
+    def __init__(self, component_config: Optional[Dict[Text, Any]] = None):
+        super(LookupEntityExtractor, self).__init__(component_config)
 
         # check if "entities" and "file_path" are configured in the config.yml
         if component_config is not None and "entities" not in component_config or "files_path" not in component_config:
